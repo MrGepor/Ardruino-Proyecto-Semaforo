@@ -1,4 +1,6 @@
 //Proyecto Semáforo con TinkerCad
+//C++
+//
 
 int Rojo=13;
 int Amarillo=12;
