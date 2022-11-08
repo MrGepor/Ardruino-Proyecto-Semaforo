@@ -1,0 +1,25 @@
+//Sensor PIR con TinkerCad
+// C++ code
+//
+
+int LED = 13;
+int PIR = 7;
+int DatoPIR;
+
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  pinMode(PIR, INPUT);
+}
+
+void loop()
+{
+  DatoPIR = digitalRead(PIR);
+  if (DatoPIR == HIGH){
+    digitalWrite(LED, HIGH);
+  }
+  else{
+    digitalWrite(LED, LOW);
+  }
+  delay(10);
+}
