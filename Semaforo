@@ -1,0 +1,28 @@
+//Proyecto Semáforo con TinkerCad
+
+int Rojo=13;
+int Amarillo=12;
+int Verde=11;
+
+void setup()
+{
+  pinMode(Rojo, OUTPUT);
+  pinMode(Amarillo, OUTPUT);
+  pinMode(Verde, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(Rojo, HIGH);
+  digitalWrite(Amarillo, LOW);
+  digitalWrite(Verde, LOW);
+  delay(3000); // Wait for 3000 millisecond(s)
+  digitalWrite(Verde, HIGH);
+  digitalWrite(Amarillo, LOW);
+  digitalWrite(Rojo, LOW);
+  delay(3000); // Wait for 3000 millisecond(s)
+  digitalWrite(Amarillo, HIGH);
+  digitalWrite(Verde, LOW);
+  digitalWrite(Rojo, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
